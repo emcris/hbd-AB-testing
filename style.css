@@ -95,6 +95,10 @@ button{
     font-style: normal;
     text-align: center;
 }
+.active{
+    background-color: #F2CB05 !important;
+    color: #f2f2f2 !important;
+}
 input{
     background: #f2f2f2;
     padding: 20px;
@@ -558,6 +562,7 @@ header{
     height: 45px;
     width: 190px;
     margin: 20px;
+    cursor: pointer;
 }
 /* .button__trial--signup{
     display: flex;
@@ -660,19 +665,39 @@ footer{
     .reviews{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50px 100px 100px 100px 50px;
+        grid-template-rows: 50px 150px 50px 100px 50px;
     }
     .reviews .yellow{
         grid-column: 1/ span 12;
         grid-row: 1 /span 1;
     }
+    .testqase-picture{
+        grid-column: 1/ span 5;
+        grid-row: 2 /span 1;
+        margin: auto;
+    }
     .reviews__testqase{
         grid-column: 1/ span 5;
-        grid-row: 2 /span 2;
+        grid-row: 3 /span 1;
+        margin: auto;
+    }
+    .testqase-content{
+        grid-column: 1/ span 5;
+        grid-row: 4 /span 1;
+    }
+    .wp-picture{
+        grid-column: 8/ span 5;
+        grid-row: 2 /span 1;
+        margin: auto;
     }
     .reviews__wp-urgent{
-        grid-column: 7/ span 5;
-        grid-row: 2 /span 2;
+        grid-column: 8/ span 5;
+        grid-row: 3 /span 1;
+        margin: auto;
+    }
+    .wp-content{
+        grid-column: 8/ span 5;
+        grid-row: 4 /span 1; 
     }
     .plans-flex{
        display: flex;
@@ -823,7 +848,7 @@ footer{
 }
 @media only screen and (min-width: 1200px){
     .grid-container{
-        grid-template-rows: 40vw 50px 400px 750px 650px 425px 725px 450px 35vw;
+        grid-template-rows: 40vw 50px 300px 650px 650px 425px 725px 450px 35vw;
     }
     header{
         grid-template-rows: 50px 150px 150px 100px 50px;
@@ -851,6 +876,43 @@ footer{
     }
     .header_free-trial::before{
         left: 75px;
+    }
+    .reviews{
+        grid-template-rows: 75px 50px 50px 50px 75px;
+    }
+    .testqase-picture{
+        grid-column: 2/ span 1;
+        grid-row: 2 /span 3;
+        margin: auto;
+    }
+    .reviews__testqase{
+        grid-column: 3/ span 2;
+        grid-row: 2 /span 1;
+        text-align: left;
+        padding-left: 15px;
+        margin: auto;
+    }
+    .testqase-content{
+        grid-column: 3/ span 3;
+        grid-row: 3 /span 2;
+        padding-left:15px ;
+        text-align: left;
+    }
+    .wp-picture{
+        grid-column: 7/ span 2;
+        grid-row: 2 /span 3;
+        margin: auto;
+    }
+    .reviews__wp-urgent{
+        grid-column: 9/ span 2;
+        grid-row: 2 /span 1;
+        text-align: left;
+        margin: auto;
+    }
+    .wp-content{
+        grid-column: 9/ span 3;
+        grid-row: 3 /span 1; 
+        text-align: left;
     }
     .plans .green{
         text-align: left;
@@ -890,7 +952,7 @@ footer{
     }
     .gaurantee .yellow{
         grid-column: 1 / span 4;
-        text-align: left;
+        margin: auto;
     }
     .gaurantee h5{
         grid-column: 1 / span 4;
@@ -906,6 +968,9 @@ footer{
     .faq .orange{
         grid-column: 1 / span 4;
         text-align: left;
+    }
+    h5 .faq{
+        grid-column: 1 / span 4;
     }
     .button__trial--signup{
         margin: 60px;
