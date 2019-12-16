@@ -94,6 +94,7 @@ button{
     font-weight: 700;
     font-style: normal;
     text-align: center;
+    cursor: pointer;
 }
 .active{
     background-color: #F2CB05 !important;
@@ -122,6 +123,7 @@ header{
     width: 250px;
     height: 60px;
     margin:10px;
+    cursor: pointer;
 }
 .header-beans{
     grid-column: 1 / span 12;
@@ -452,7 +454,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.process__button--trial{
+.process__button--trial, .process__button--trial-a{
     font-size: 22px;
     width: 250px;
     height: 50px;
@@ -570,12 +572,13 @@ header{
     justify-content: center;
     align-items: center;
 } */
-.button__trial--signup{
+.button__trial--signup, .button__trial--signup-a{
     font-size: 22px;
     width: 250px;
     height: 50px;
     margin:25px;
     position: relative;
+    cursor: pointer;
 }
 .button__trial--signup::before{
     position: absolute;
@@ -972,7 +975,7 @@ footer{
     h5 .faq{
         grid-column: 1 / span 4;
     }
-    .button__trial--signup{
+    .button__trial--signup, .button__trial--signup-a{
         margin: 60px;
     }
     .faq{

@@ -14,7 +14,8 @@
             <img src="img/large-header-35.svg" alt="" class="main-logo">
             <h1 class="unlimit"><span>Unlimited</span><br>Designs & Revisions.</h1>
             <h2 class="yellow header_free-trial"><span>7 Day</span><br>Free Trial</h2>
-                <button class="header__button" type="button" onclick="">Try 7 Days Free</button>
+            <a  class="header__button" href="https://happybeansdesign.com/payment/"><button class="header__button" type="button" onclick="">Try 7 Days Free</button></a>
+            
         </header>
         <section class="company">
         </section>
@@ -52,7 +53,7 @@
                 <div class="plans__basic--footer"></div>
             </div>
             </div>
-            <button class="plans__button" type="button" onclick="">Try 7 Days Free</button>
+            <a  class="plans__button" href="https://happybeansdesign.com/payment/"><button class="plans__button" type="button" onclick="">Try 7 Days Free</button></a>
         </section>
         <section class="process">
             <h3 class="purple process-header">Our Simple Process</h3>
@@ -71,7 +72,7 @@
                 </div>
             </div>
             <div class="process__button">
-                <button class="process__button--trial">Try 7 Days Free</button>
+                <a class="process__button--trial-a" href="https://happybeansdesign.com/payment/"><button class="process__button--trial">Try 7 Days Free</button></a>
             </div>
         </section>
         <section class="gaurantee">
@@ -102,13 +103,13 @@
         <section class="trial">
             <h3 class="blue space-trial">Claim Your Free Trial</h3>
             <p class="email_wrap">Signing up with a new company might be nerve-wracking, which is why we are offering a 7-day FREE trial for you.</p>
-            <input type="email" name="email" value="Email" class="email">
+            <input id="email" type="email" name="email" placeholder="Email" class="email">
             <div class="trial__selections">
                 <button onclick="activateButton('pro')" class="trial__button active" id="pro">Pro</button>
                 <button onclick="activateButton('basic')" class="trial__button" id="basic">Basic</button>
                 <button onclick="activateButton('enterprise')" class="trial__button" id="enterprise">Enterprise</button>
             </div>  
-            <button class="button__trial--signup">Try 7 Days Free</button>
+            <button class="button__trial--signup" onclick="send()">Try 7 Days Free</button>
         </section>       
         <footer>
             <img src="img/footer-32.svg" alt="Happy Beans Design" class="footer-brand">
